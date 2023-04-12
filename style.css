@@ -1,0 +1,45 @@
+body {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes example {
+  0% {
+    border-top: 30px solid skyblue;
+    border-right: 30px solid lightpink;
+    border-bottom: 30px solid lightgreen;
+    border-left: 30px solid #ffefd5;
+  }
+  25% {
+    border-top: 30px solid lightpink;
+    border-right: 30px solid lightgreen;
+    border-bottom: 30px solid #ffefd5;
+    border-left: 30px solid skyblue;
+  }
+  50% {
+    border-top: 30px solid lightgreen;
+    border-right: 30px solid #ffefd5;
+    border-bottom: 30px solid skyblue;
+    border-left: 30px solid lightpink;
+  }
+  100% {
+    border-top: 30px solid #ffefd5;
+    border-right: 30px solid skyblue;
+    border-bottom: 30px solid lightpink;
+    border-left: 30px solid lightgreen;
+  }
+}
+
+img {
+  margin: 100px;
+  animation-name: example;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  border-top: 30px solid skyblue;
+  border-right: 30px solid lightpink;
+  border-bottom: 30px solid lightgreen;
+  border-left: 30px solid #ffefd5;
+}
